@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepney Winter Cloth - Wholesale Winter Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1e3a5f;
+            --light-navy: #2d4f7c;
+            --white: #ffffff;
+            --gray: #f5f7fa;
+            --beige: #f8f4e9;
+            --dark-gray: #333333;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--dark-gray);
+            overflow-x: hidden;
+        }
+
+        /* Modern Header Styles - 2025 Trend */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        header.sticky {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-img {
+    width: 100px; /* adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+        header.sticky .logo {
+            color: var(--navy);
+        }
+
+        .logo i {
+            font-size: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .logo span {
+            color: var(--beige);
+            font-weight: 400;
+        }
+
+        header.sticky .logo span {
+            color: var(--light-navy);
+        }
+
+        /* Enhanced Navigation */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--beige);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        header.sticky nav ul li a {
+            color: var(--dark-gray);
+        }
+
+        header.sticky nav ul li a::after {
+            background: var(--navy);
+        }
+
+        nav ul li a:hover {
+            color: var(--beige);
+        }
+
+        header.sticky nav ul li a:hover {
+            color: var(--navy);
+        }
+
+        /* Modern Header Icons */
+        .header-icons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .header-icons i {
+            color: var(--white);
+            font-size: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 8px;
+        }
+
+        header.sticky .header-icons i {
+            color: var(--dark-gray);
+        }
+
+        .header-icons i:hover {
+            color: var(--beige);
+            transform: scale(1.1);
+        }
+
+        header.sticky .header-icons i:hover {
+            color: var(--navy);
+        }
+
+        /* Hamburger Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--white);
+            transition: var(--transition);
+            border-radius: 3px;
+        }
+
+        header.sticky .menu-toggle span {
+            background-color: var(--navy);
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section with Enhanced Animation */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(30, 58, 95, 0.7), rgba(30, 58, 95, 0.7)), 
+                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s forwards 0.5s;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInUp 1s forwards 1s;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--beige);
+            color: var(--navy);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            opacity: 0;
+            animation: fadeInUp 1s forwards 1.5s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            background-color: var(--white);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Snow Animation */
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: white;
+            font-size: 1em;
+            animation: fall linear forwards;
+            opacity: 0.8;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(105vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Animation Utility */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scroll-reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .scroll-reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scroll-reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .scroll-reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--beige);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--dark-gray);
+            max-width: 600px;
+            margin: 20px auto 0;
+            font-size: 1.1rem;
+        }
+
+        /* Category Section */
+        .categories {
+            background-color: var(--gray);
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(30, 58, 95, 0.05), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .category-card:hover::before {
+            left: 100%;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-icon {
+            font-size: 50px;
+            color: var(--navy);
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .category-card:hover .category-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .category-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--navy);
+        }
+
+        .category-card p {
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Products Section */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            height: 280px;
+            background: linear-gradient(135deg, var(--beige), #e8dfc8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-img::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img::before {
+            animation: shine 0.8s;
+        }
+
+        @keyframes shine {
+            0% { left: -50%; }
+            100% { left: 150%; }
+        }
+
+
+        .product-card:hover .product-img i {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: var(--navy);
+        }
+
+        .product-price {
+            font-weight: 600;
+            color: var(--light-navy);
+            font-size: 1.2rem;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--navy);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .product-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        /* About Section */
+        .about {
+            background-color: var(--beige);
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-content h3 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: var(--navy);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .about-img {
+            position: relative;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-img::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--navy);
+            border-radius: 15px;
+            z-index: -1;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--gray);
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(to top, rgba(30, 58, 95, 0.05), transparent);
+            transition: height 0.3s ease;
+        }
+
+        .feature-card:hover::after {
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 50px;
+            color: var(--navy);
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.15);
+            color: var(--light-navy);
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-card p {
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--beige);
+        }
+
+        .testimonial-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial-card {
+            min-width: 100%;
+            padding: 40px;
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .client-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, var(--navy), var(--light-navy));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .client-img i {
+            font-size: 35px;
+            color: var(--white);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+
+        .client-name {
+            font-weight: 600;
+            color: var(--navy);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .client-store {
+            color: var(--light-navy);
+            font-size: 1rem;
+        }
+
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            gap: 12px;
+        }
+
+        .testimonial-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: rgba(45, 79, 124, 0.3);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .testimonial-dot:hover {
+            background-color: rgba(45, 79, 124, 0.6);
+            transform: scale(1.2);
+        }
+
+        .testimonial-dot.active {
+            background-color: var(--navy);
+            transform: scale(1.3);
+        }
+
+        /* Contact Section - Info Only */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info-card {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: var(--transition);
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info-card h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--navy);
+            text-align: center;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .info-item:hover {
+            background-color: var(--gray);
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--navy), var(--light-navy));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: var(--white);
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .info-item p {
+            font-size: 1.05rem;
+            color: var(--dark-gray);
+        }
+
+        .social-media {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-media h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--navy), var(--light-navy));
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 20px;
+        }
+
+        .social-links a:hover {
+            background: var(--beige);
+            color: var(--navy);
+            transform: translateY(-5px) rotate(360deg);
+        }
+
+        /* Blog Section */
+        .blog {
+            background-color: var(--gray);
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        .blog-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-img {
+            height: 220px;
+            background: linear-gradient(135deg, var(--beige), #e8dfc8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-img i {
+            font-size: 70px;
+            color: var(--navy);
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .blog-img i {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .blog-date {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--navy);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+            line-height: 1.4;
+        }
+
+        .blog-content p {
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+            line-height: 1.7;
+        }
+
+        .read-more {
+            color: var(--light-navy);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .read-more:hover {
+            color: var(--navy);
+            gap: 12px;
+        }
+
+        .read-more i {
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--navy), #152a47);
+            color: var(--white);
+            padding: 70px 5% 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background-color: var(--beige);
+            border-radius: 2px;
+        }
+
+        .footer-col p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            opacity: 0.9;
+            display: inline-block;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--beige);
+            padding-left: 8px;
+            opacity: 1;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.8;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--navy), #152a47);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: right 0.5s ease;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            text-align: center;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        .mobile-menu ul li {
+            margin: 25px 0;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu.active ul li {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .mobile-menu.active ul li:nth-child(1) { transition-delay: 0.1s; }
+        .mobile-menu.active ul li:nth-child(2) { transition-delay: 0.2s; }
+        .mobile-menu.active ul li:nth-child(3) { transition-delay: 0.3s; }
+        .mobile-menu.active ul li:nth-child(4) { transition-delay: 0.4s; }
+        .mobile-menu.active ul li:nth-child(5) { transition-delay: 0.5s; }
+        .mobile-menu.active ul li:nth-child(6) { transition-delay: 0.6s; }
+
+        .mobile-menu ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--beige);
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 35px;
+            color: var(--white);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-menu:hover {
+            color: var(--beige);
+            transform: rotate(90deg);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+
+            .section-title h2 {
+                font-size: 2.3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 70px 5%;
+            }
+
+            .category-container,
+            .products-container,
+            .blog-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            section {
+                padding: 60px 5%;
+            }
+
+            .section-title h2 {
+                font-size: 1.7rem;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .about-img::before {
+                display: none;
+            }
+
+            .mobile-menu {
+                max-width: 100%;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: var(--beige);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+       <a href="#" class="logo">
+    <img src="img/logo.png" alt="Stepney Winter Cloth Logo" class="logo-img">
+</a>
+
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#categories" class="mobile-link">Categories</a></li>
+            <li><a href="#products" class="mobile-link">Products</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="snowflakes" id="snowflakes"></div>
+        <div class="hero-content">
+            <h1>Wholesale Winter Fashion – Warmth in Every Thread</h1>
+            <p>Premium winter clothing for retailers and bulk buyers</p>
+            <a href="#categories" class="cta-btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="categories" id="categories">
+        <div class="section-title scroll-reveal">
+            <h2>Our Categories</h2>
+            <p>Explore our wide range of winter clothing categories</p>
+        </div>
+        
+        <div class="category-container" id="categoryContainer">
+            <div class="category-card scroll-reveal">
+                <div class="category-icon">
+                    <i class="fas fa-male"></i>
+                </div>
+                <h3>Men's Jackets</h3>
+                <p>Durable and stylish jackets for men</p>
+            </div>
+            
+            <div class="category-card scroll-reveal">
+                <div class="category-icon">
+                    <i class="fas fa-female"></i>
+                </div>
+                <h3>Women's Coats</h3>
+                <p>Elegant and warm coats for women</p>
+            </div>
+            
+            <div class="category-card scroll-reveal">
+                <div class="category-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3>Kids' Wear</h3>
+                <p>Comfortable and cute winter wear for kids</p>
+            </div>
+            
+            <div class="category-card scroll-reveal">
+                <div class="category-icon">
+                    <i class="fas fa-mitten"></i>
+                </div>
+                <h3>Winter Accessories</h3>
+                <p>Hats, gloves, scarves, and more</p>
+            </div>
+            
+            <div class="category-card scroll-reveal">
+                <div class="category-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3>Hoodies & Sweaters</h3>
+                <p>Cozy and fashionable tops</p>
+            </div>
+            
+            <div class="category-card scroll-reveal">
+                <div class="category-icon">
+                    <i class="fas fa-socks"></i>
+                </div>
+                <h3>Thermal Wear</h3>
+                <p>Extra warmth for cold days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+<section class="products" id="products">
+    <div class="section-title scroll-reveal">
+        <h2>Featured Products</h2>
+        <p>Check out our best-selling winter items</p>
+    </div>
+    
+    <div class="products-container" id="productsContainer">
+        <div class="product-card scroll-reveal">
+            <div class="product-img">
+                <span class="product-badge">Bestseller</span>
+                <img src="img/61ZIQrfim+L._AC_UY1000_.jpg" alt="Men's Winter Parka" style="width:100%; height: 280px; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <h3>Men's Winter Parka</h3>
+                <p class="product-price">£45.99 (Wholesale)</p>
+            </div>
+        </div>
+        
+        <div class="product-card scroll-reveal">
+            <div class="product-img">
+                <span class="product-badge">New</span>
+                <img src="img/Nobis-Tempus-Cire-TechnicalTaffeta-Black-FL-Front-Shadow.png" alt="Women's Puffer Coat" style="width:100%; height: 280px; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <h3>Women's Puffer Coat</h3>
+                <p class="product-price">£52.99 (Wholesale)</p>
+            </div>
+        </div>
+        
+        <div class="product-card scroll-reveal">
+            <div class="product-img">
+                <span class="product-badge">Popular</span>
+                <img src="img/images.jpg" alt="Kids' Snowsuit" style="width:100%; height: 280px; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <h3>Kids' Snowsuit</h3>
+                <p class="product-price">£38.99 (Wholesale)</p>
+            </div>
+        </div>
+        
+        <div class="product-card scroll-reveal">
+            <div class="product-img">
+                <img src="img/images (1).jpg" alt="Winter Beanie Set" style="width:100%; height: 280px; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <h3>Winter Beanie Set</h3>
+                <p class="product-price">£12.99 (Wholesale)</p>
+            </div>
+        </div>
+
+        <div class="product-card scroll-reveal">
+            <div class="product-img">
+                <span class="product-badge">Sale</span>
+                <img src="img/images (2).jpg" alt="Thermal Gloves Pack" style="width:100%; height: 280px; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <h3>Thermal Gloves Pack</h3>
+                <p class="product-price">£9.99 (Wholesale)</p>
+            </div>
+        </div>
+
+        <div class="product-card scroll-reveal">
+            <div class="product-img">
+                <img src="img/images (3).jpg" alt="Premium Wool Scarves" style="width:100%; height: 280px; object-fit: cover;">
+            </div>
+            <div class="product-info">
+                <h3>Premium Wool Scarves</h3>
+                <p class="product-price">£15.99 (Wholesale)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content scroll-reveal-left">
+                <h3>About Stepney Winter Cloth</h3>
+                <p>For over 15 years, Stepney Winter Cloth has been providing high-quality winter clothing to retailers and bulk buyers across the country. Our mission is to deliver warmth, comfort, and style through our carefully crafted winter wear.</p>
+                <p>We work directly with manufacturers to ensure the best quality at competitive prices, making us the preferred wholesale partner for hundreds of retail stores nationwide.</p>
+                <p>Our commitment to excellence and customer satisfaction has made us a trusted name in the winter clothing industry, serving over 500+ retail partners.</p>
+            </div>
+            
+            <div class="about-img scroll-reveal-right">
+                <img src="img/about.png" alt="Stepney Winter Cloth Factory">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features">
+        <div class="section-title scroll-reveal">
+            <h2>Why Choose Us</h2>
+            <p>Discover what makes us the best wholesale partner</p>
+        </div>
+        
+        <div class="features-container">
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>High-Quality Winter Wear</h3>
+                <p>Premium materials and craftsmanship in every product</p>
+            </div>
+       
+            
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Fast Wholesale Delivery</h3>
+                <p>Quick turnaround times for bulk orders nationwide</p>
+            </div>
+            
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Affordable Bulk Pricing</h3>
+                <p>Competitive prices for volume purchases</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title scroll-reveal">
+            <h2>Client Testimonials</h2>
+            <p>What our customers say about us</p>
+        </div>
+        
+        <div class="testimonial-container">
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-card">
+                    <div class="client-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <p class="testimonial-text">"Stepney Winter Cloth has been our go-to wholesale supplier for 5 years. Their quality is consistently excellent and their pricing is very competitive. Highly recommended!"</p>
+                    <h4 class="client-name">Sarah Johnson</h4>
+                    <p class="client-store">Winter Wonders Store</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="client-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <p class="testimonial-text">"The custom branding option has helped us establish our store identity. The delivery is always on time, even during peak season. Great partnership!"</p>
+                    <h4 class="client-name">Michael Chen</h4>
+                    <p class="client-store">Mountain Peak Outfitters</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="client-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <p class="testimonial-text">"As a new retailer, I was nervous about wholesale purchasing. Stepney made the process easy and their products sell quickly in my store. Best decision ever!"</p>
+                    <h4 class="client-name">Emily Rodriguez</h4>
+                    <p class="client-store">Cozy Corner Shop</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-index="0"></div>
+                <div class="testimonial-dot" data-index="1"></div>
+                <div class="testimonial-dot" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Info Only -->
+    <section class="contact" id="contact">
+        <div class="section-title scroll-reveal">
+            <h2>Get in Touch</h2>
+            <p>Contact us for wholesale pricing and inquiries</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info-card scroll-reveal">
+                <h3>Contact Information</h3>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <p>1st Floor, 103 Commercial Rd, London E1 1RD</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <p>+44 7405 335221</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <p>Info@Theclothiercache.Shop</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <p>Mon-Sat: 10:00 AM – 9:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="contact-info-card scroll-reveal">
+                <h3>Visit Our Showroom</h3>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <p>Experience our full collection at our flagship showroom</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p>Book an appointment for personalized consultation</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <p>Free shipping on orders over $1000</p>
+                </div>
+
+                <div class="social-media">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="section-title scroll-reveal">
+            <h2>Winter Style Tips</h2>
+            <p>Latest trends and advice for retailers</p>
+        </div>
+        
+        <div class="blog-container" id="blogContainer">
+            <div class="blog-card scroll-reveal">
+                <div class="blog-img">
+                    <span class="blog-date">Nov 2025</span>
+                    <i class="fas fa-snowflake"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>Top Winter Trends 2025</h3>
+                    <p>Discover the colors, styles, and materials that will dominate the winter fashion scene this season.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-card scroll-reveal">
+                <div class="blog-img">
+                    <span class="blog-date">Oct 2025</span>
+                    <i class="fas fa-vest"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>How to Choose the Right Jacket</h3>
+                    <p>A comprehensive guide to selecting the perfect winter jacket for different climates and customer preferences.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-card scroll-reveal">
+                <div class="blog-img">
+                    <span class="blog-date">Sep 2025</span>
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>Bulk Buying Tips for Retailers</h3>
+                    <p>Maximize your profits with these strategic wholesale purchasing strategies for winter inventory management.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Stepney Winter Cloth</h3>
+                <p>Your trusted wholesale partner for premium winter clothing since 2008. Quality, reliability, and excellence in every stitch.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 1st Floor, 103 Commercial Rd, London E1 1RD</li>
+                    <li><i class="fas fa-phone"></i> +44 7405 335221</li>
+                    <li><i class="fas fa-envelope"></i> Info@Theclothiercache.Shop</li>
+                    <li><i class="fas fa-clock"></i> Mon-Sat: 10AM - 9PM</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Stepney Winter Cloth. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hide');
+            }, 1000);
+        });
+
+        // Sticky Header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            menuToggle.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Snowflake Animation
+        const snowflakesContainer = document.getElementById('snowflakes');
+        const snowflakeChars = ['❅', '❆', '❄'];
+        
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = snowflakeChars[Math.floor(Math.random() * snowflakeChars.length)];
+            snowflake.style.left = Math.random() * 100 + '%';
+            snowflake.style.animationDuration = Math.random() * 3 + 5 + 's';
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            snowflakesContainer.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 8000);
+        }
+
+        setInterval(createSnowflake, 300);
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right');
+
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 100;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Testimonial Slider
+        const testimonialSlider = document.getElementById('testimonialSlider');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            testimonialSlider.style.transform = `translateX(-${index * 100}%)`;
+            testimonialDots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+            currentTestimonial = index;
+        }
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+            });
+        });
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonialDots.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Dynamic Content Management (Example)
+        // You can easily add, edit, or remove categories, products, and blog posts
+
+        // Example: Add new category dynamically
+        function addCategory(icon, title, description) {
+            const categoryContainer = document.getElementById('categoryContainer');
+            const newCategory = document.createElement('div');
+            newCategory.className = 'category-card scroll-reveal';
+            newCategory.innerHTML = `
+                <div class="category-icon">
+                    <i class="${icon}"></i>
+                </div>
+                <h3>${title}</h3>
+                <p>${description}</p>
+            `;
+            categoryContainer.appendChild(newCategory);
+        }
+
+        // Example: Add new product dynamically
+        function addProduct(icon, title, price, badge = '') {
+            const productsContainer = document.getElementById('productsContainer');
+            const newProduct = document.createElement('div');
+            newProduct.className = 'product-card scroll-reveal';
+            newProduct.innerHTML = `
+                <div class="product-img">
+                    ${badge ? `<span class="product-badge">${badge}</span>` : ''}
+                    <i class="${icon}"></i>
+                </div>
+                <div class="product-info">
+                    <h3>${title}</h3>
+                    <p class="product-price">${price} (Wholesale)</p>
+                </div>
+            `;
+            productsContainer.appendChild(newProduct);
+        }
+
+        // Example: Add new blog post dynamically
+        function addBlogPost(icon, date, title, description) {
+            const blogContainer = document.getElementById('blogContainer');
+            const newBlog = document.createElement('div');
+            newBlog.className = 'blog-card scroll-reveal';
+            newBlog.innerHTML = `
+                <div class="blog-img">
+                    <span class="blog-date">${date}</span>
+                    <i class="${icon}"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>${title}</h3>
+                    <p>${description}</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            `;
+            blogContainer.appendChild(newBlog);
+        }
+
+        // Usage examples (uncomment to test):
+        // addCategory('fas fa-umbrella', 'Rain Gear', 'Waterproof winter accessories');
+        // addProduct('fas fa-boot', 'Winter Boots', '$65.99', 'Hot');
+        // addBlogPost('fas fa-lightbulb', 'Aug 2025', 'Winter Care Tips', 'Learn how to care for your winter clothing.');
+    </script>
+</body>
+</html>
